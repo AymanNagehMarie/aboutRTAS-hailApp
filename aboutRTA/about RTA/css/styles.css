@@ -1,0 +1,77 @@
+/* START Google Maps */
+
+#map {
+  height: 100%;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* No scroll */
+}
+
+
+/* END Google Maps */
+
+
+/* No text decoration */
+
+a {
+  text-decoration: none;
+}
+
+
+/* Viewport Calculation */
+
+.vh-top {
+  height: 70vh!important;
+}
+
+.vh-bottom {
+  height: 30vh!important;
+  background-color: #fff;
+}
+
+.vh-20 {
+  height: 20vh!important;
+}
+
+.vh-10 {
+  height: 10vh!important;
+}
+
+
+/* Vertical Line Separator */
+
+.call {
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+
+/* Buttons (Call and Email) */
+
+.buttons {
+  display: inline-block;
+  color: #000;
+}
+
+
+/* Icon Margins */
+
+.svg {
+  margin: .25rem!important;
+}
+
+
+/* Hide Link to Google Maps */
+
+.view-link {
+  display: none;
+}
