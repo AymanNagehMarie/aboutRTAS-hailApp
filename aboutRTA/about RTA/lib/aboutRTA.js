@@ -160,28 +160,28 @@ document.getElementById("instagramBtn").onclick = onClickinstagramBtn;
 		}
 		function onClickfacebookBtn(e) {
 		  e.preventDefault();
-		  var win=window.open("http://www.facebook.com/rtadubai", "_system");
-      win.focus();
+		  window.open("http://www.facebook.com/rtadubai", "_system");
+
 		}
 		function onClicktwitterBtn(e) {
 			e.preventDefault();
-		  var win=window.open("http://twitter.com/RTA_Dubai", "_system");
-      win.focus();
+		  window.open("http://twitter.com/RTA_Dubai", "_system");
+      //win.focus();
 		}
 		function onClickyoutubeBtn(e) {
       e.preventDefault();
-			var win=window.open("http://youtube.com/user/rtadubaigov", "_system");
-      win.focus();
+			window.open("http://youtube.com/user/rtadubaigov", "_system");
+      //win.focus();
 		}
 		function onClicklinkedinBtn(e) {
 			e.preventDefault();
-			var win=window.open("https://www.linkedin.com/company/road-and-transport-authority", "_system");
-      win.focus();
+			window.open("https://www.linkedin.com/company/road-and-transport-authority", "_system");
+      //win.focus();
 		}
 		function onClickinstagramBtn (e) {
 			e.preventDefault();
-			var win=window.open("http://instagram.com/rta_dubai", "_system");
-      win.focus();
+			window.open("http://instagram.com/rta_dubai", "_system");
+      //win.focus();
 		}
 
 function getParameterByName(name, url = window.location.href) {
