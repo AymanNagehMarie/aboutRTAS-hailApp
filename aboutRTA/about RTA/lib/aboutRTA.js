@@ -126,6 +126,9 @@ var data={
       fire:"فائر بریگیڈ "
     }
 }
+var body = document.body;
+
+
 headerAbout=document.getElementById("headerAbout");
 contentAbout=document.getElementById("contentAbout");
 ratingHeader=document.getElementById("ratingHeader");
@@ -136,6 +139,51 @@ socialHeader=document.getElementById("socialHeader");
 emergencyNumbers=document.getElementById("emergencyNumbers");
 policeNumber=document.getElementById("policeNumber");
 fireNumber=document.getElementById("fireNumber");
+
+
+document.getElementById("emergency").onclick = onCallEmergency;
+document.getElementById("tollfree").onclick = onCallTollFree;
+document.getElementById("facebookBtn").onclick = onClickfacebookBtn;
+document.getElementById("twitterBtn").onclick = onClicktwitterBtn;
+document.getElementById("youtubeBtn").onclick = onClickyoutubeBtn;
+document.getElementById("linkedinBtn").onclick = onClicklinkedinBtn;
+document.getElementById("instagramBtn").onclick = onClickinstagramBtn;
+
+
+    function onCallEmergency(e) {
+		  e.preventDefault();
+			window.open("tel:042905000", "_system");
+		}
+		function onCallTollFree(e) {
+			e.preventDefault();
+			window.open("tel:8009090", "_system");
+		}
+		function onClickfacebookBtn(e) {
+		  e.preventDefault();
+		  var win=window.open("http://www.facebook.com/rtadubai", "_system");
+      win.focus();
+		}
+		function onClicktwitterBtn(e) {
+			e.preventDefault();
+		  var win=window.open("http://twitter.com/RTA_Dubai", "_system");
+      win.focus();
+		}
+		function onClickyoutubeBtn(e) {
+      e.preventDefault();
+			var win=window.open("http://youtube.com/user/rtadubaigov", "_system");
+      win.focus();
+		}
+		function onClicklinkedinBtn(e) {
+			e.preventDefault();
+			var win=window.open("https://www.linkedin.com/company/road-and-transport-authority", "_system");
+      win.focus();
+		}
+		function onClickinstagramBtn (e) {
+			e.preventDefault();
+			var win=window.open("http://instagram.com/rta_dubai", "_system");
+      win.focus();
+		}
+
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -145,7 +193,14 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-function setData(data){
+function setData(data,langDirection){
+  if(langDirection){
+    body.classList.add("container-rtl");
+  }else{
+    body.classList.remove("container-rtl");
+
+  }
+
   headerAbout.innerHTML=data.headerAbout;
   contentAbout.innerHTML=data.contentAbout;
   ratingHeader.innerHTML=data.ratingHeader;
@@ -161,7 +216,7 @@ var lang=getParameterByName("lang")?getParameterByName("lang"):"en";
 
      switch (lang) {
         case "ar":
-          setData(data.ar);
+          setData(data.ar,"rtl");
           break;
         case "fr":
           setData(data.fr);
@@ -182,13 +237,9 @@ var lang=getParameterByName("lang")?getParameterByName("lang"):"en";
           setData(data.in);
           break;
         case "ur":
-          setData(data.ur);
+          setData(data.ur,"rtl");
           break;
         default:
           setData(data.en);
           break;
      }
-
-
-
-

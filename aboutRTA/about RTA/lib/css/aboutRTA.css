@@ -14,13 +14,29 @@ body{
    flex: 1;
 
 }
+.container-rtl .block{
+   background-color: white!important;
+   width: 100%;
+   border-radius:5px;
+   border:solid 1px #9e9e9e1f;
+   margin-bottom:8px;
+   flex: 1;
+   direction: rtl;
+
+}
+#socialIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contentPage{
    border-radius: 2px;
    position:relative;
    font-size: 14px;
    display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 5px;
 }
 
 .icon{
@@ -47,6 +63,11 @@ top: 35px;
   position: relative;
       left: calc(22%);
       width: calc(78%);
+}
+.container-rtl .textContent  {
+	direction:rtl;
+  right: calc(22%);
+  width: calc(78%);
 }
 .header{
     font-weight:bold;
@@ -75,28 +96,31 @@ top: 35px;
     top:10px;
 }
 .socailCont {
-    padding-left:25px;
     background-color: white;
     margin-bottom: 8px;
     padding-top: 5px;
+    width: 100%;
+    flex: 1;
 }
 .socailCont .header{
     text-align:center;
 }
+.socail{display: inline-block;width: 16%;height: 16%;margin: 3px;}
 
-.socail{
-display: inline-block;
-width: 55px;
-height:55px;
-margin:1px
-}
+/*.socail{display: inline-block;width: 55px;height:55px;margin: 5px;}*/
 .callsCont {
     display:inline-block;
     height: 92px !important;
+    background-color: white!important;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #9e9e9e1f;
+    margin-bottom: 8px;
+    flex: 1;
 }
 #emergency{
     width:50%;
-    display:block;
+    display: grid;
     position: absolute;
     background: white;
     text-align: center;
@@ -105,12 +129,13 @@ margin:1px
 #tollfree{
      background: white;
      width:50%;
-     display:inline-block;
+       display: grid;
      position: absolute;
      left: 50%;
      border-left: solid .5px;
      text-align: center;
 }
+
 .callsCont  .header{
     text-align:center;
 }
