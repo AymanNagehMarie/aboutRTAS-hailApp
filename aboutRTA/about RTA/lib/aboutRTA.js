@@ -140,7 +140,7 @@ emergencyNumbers=document.getElementById("emergencyNumbers");
 policeNumber=document.getElementById("policeNumber");
 fireNumber=document.getElementById("fireNumber");
 
-
+/*
 document.getElementById("emergency").onclick = onCallEmergency;
 document.getElementById("tollfree").onclick = onCallTollFree;
 document.getElementById("facebookBtn").onclick = onClickfacebookBtn;
@@ -148,7 +148,15 @@ document.getElementById("twitterBtn").onclick = onClicktwitterBtn;
 document.getElementById("youtubeBtn").onclick = onClickyoutubeBtn;
 document.getElementById("linkedinBtn").onclick = onClicklinkedinBtn;
 document.getElementById("instagramBtn").onclick = onClickinstagramBtn;
+*/
 
+document.getElementById("emergency").addEventListener('click', onCallEmergency, false);
+document.getElementById("tollfree").addEventListener('click', onCallTollFree, false);
+document.getElementById("facebookBtn").addEventListener('click', onClickfacebookBtn, false);
+document.getElementById("twitterBtn").addEventListener('click', onClicktwitterBtn, false);
+document.getElementById("youtubeBtn").addEventListener('click', onClickyoutubeBtn, false);
+document.getElementById("linkedinBtn").addEventListener('click', onClicklinkedinBtn, false);
+document.getElementById("instagramBtn").addEventListener('click', onClickinstagramBtn, false);
 
     function onCallEmergency(e) {
 		  e.preventDefault();
