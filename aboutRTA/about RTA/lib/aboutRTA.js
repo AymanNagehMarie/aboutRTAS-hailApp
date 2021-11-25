@@ -69,7 +69,7 @@ var data={
       police:"Policía y ambulancia",
       fire:"Cuerpo de Bomberos "
     },
-    cn:{//china
+    zh:{//china
       headerAbout:"你好，这是s'hail！",
       contentAbout:"<span class='text'>我是您的个人旅行伴侣，我可以帮助您在迪拜最大限度地致超您的旅游体验。</span>"+
     "<span class='text'>我可以规划您的旅行，为您提供价格比较，预订您的出租车，请将您的NOL卡提高并为您提供许多必不可少的旅行信息。</span>"+
@@ -97,7 +97,7 @@ var data={
       police:"Полиция и скорая помощь ",
       fire:"Пожарная часть "
     },
-    in:{//India
+    hi:{//India
       headerAbout:"हैलो, यह s'hail है! ",
       contentAbout:"<span class='text'>मैं आपका निजी यात्रा साथी हूं और मैं आपको दुबई में अपने यात्रा अनुभव को अधिकतम करने में मदद कर सकता हूं।</span>"+
     "<span class='text'>मैं आपकी यात्राओं की योजना बना सकता हूं, आपको मूल्य तुलना प्रदान करता हूं, आपकी टैक्सियों की बुकिंग, अपने एनओएल कार्ड को टॉपअप कर सकता हूं और आपको कई आवश्यक यात्रा जानकारी प्रदान करता हूं। </span>"+
@@ -227,14 +227,14 @@ var lang=getParameterByName("lang")?getParameterByName("lang"):"en";
         case "es":
           setData(data.es);
           break;
-        case "cn":
-          setData(data.cn);
+        case "zh":
+          setData(data.zh);
           break;
         case "ru":
           setData(data.ru);
           break;
-        case "in":
-          setData(data.in);
+        case "hi":
+          setData(data.hi);
           break;
         case "ur":
           setData(data.ur,"rtl");
