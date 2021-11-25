@@ -11,37 +11,42 @@ body{
    border-radius:5px;
    border:solid 1px #9e9e9e1f;
    margin-bottom:8px;
+   flex: 1;
+
 }
 .contentPage{
    border-radius: 2px;
    position:relative;
    font-size: 14px;
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .icon{
-    
+
 position:absolute;
-    
+
 width: calc(22%);
-    
+
 display: flex;
-    
+
 justify-content: center;
 }
 .icon img{
-    
+
 height:50px;
-    
+
 position: absolute;
-    
+
 top: 35px;
 }
 
 .textContent{
-   
-position: absolute;
-   
-left: calc(22%);
+
+  position: relative;
+      left: calc(22%);
+      width: calc(78%);
 }
 .header{
     font-weight:bold;
@@ -53,18 +58,17 @@ left: calc(22%);
 }
 
 .appDesc{
-   height: 210px;
+
 }
 
 .rating{
-   height: 90px;
+
 }
 
 .rating img{
     top:10px;
 }
 .version{
-   height: 90px;
 }
 
 .version img{
