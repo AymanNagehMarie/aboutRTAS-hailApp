@@ -16,8 +16,8 @@ var data={
     ar:{
       headerAbout:"مرحبًا، اسمي سهيل!",
       contentAbout:"<span class='text'>رفيق التنقل الدائم، والذي يساعدك على تحقيق أفضل تجربة تنقل في دبي</span>"+
-    "<span class='text'>.يمكنك سهيل من التخطيط لرحلاتك وحجز مركبات الأجرة وتزويدك بمقارنات الأسعار، شحن بطاقة نول الخاصة بك، وتوفير رؤية شاملة على وسائل التنقل المتاحة للقيام برحلاتك</span>"+
-    "<span class='text'>.يتوفر التطبيق بين يديك ويضمن أن تكون رحلتك سلسة وممتعة </span>",
+      "<span class='text'>.يمكنك سهيل من التخطيط لرحلاتك وحجز مركبات الأجرة وتزويدك بمقارنات الأسعار، شحن بطاقة نول الخاصة بك، وتوفير رؤية شاملة على وسائل التنقل المتاحة للقيام برحلاتك</span>"+
+       "<span class='text'>.يتوفر التطبيق بين يديك ويضمن أن تكون رحلتك سلسة وممتعة </span>",
       ratingHeader:"تقييم وملاحظات المتعاملين",
        rating:".تأكّد من تزويدنا بتعليقاتك من خلال تقييم التطبيق ومؤشر السعادة لنتمكن من معرفة مدى رضاك عليه ",
       versionHeader:"إصدار تطبيق سهيل",
@@ -157,12 +157,9 @@ function setData(data){
   policeNumber.innerHTML=data.police;
   fireNumber.innerHTML=data.fire;
 }
-var lang=getParameterByName("lang");
-if(lang){
+var lang=getParameterByName("lang")?getParameterByName("lang"):"en";
+
      switch (lang) {
-        case "en":
-          setData(data.en);
-          break;
         case "ar":
           setData(data.ar);
           break;
@@ -194,4 +191,4 @@ if(lang){
 
 
 
-}
+
