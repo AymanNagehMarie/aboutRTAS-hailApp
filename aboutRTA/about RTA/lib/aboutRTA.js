@@ -1,8 +1,8 @@
 var data={
     en:{
       headerAbout:"Hello, this is S'hail! ",
-      contentAbout:"<span class='text'>I am your personal travel companion and I can help you to maximize your travelling experience in Dubai .</span>"+
-    "<span class='text'>I can plan your trips, provide you with price comparisons, bookings your Taxis, Topup your nol card and provide you with many essential travel information.</span>"+
+      contentAbout:"<span class='text'>I am your personal travel companion and I can help you to maximize your travelling experience in Dubai.</span>"+
+    "<span class='text'>I can plan your trips, provide you with price comparisons, booking your Taxis, Topup your nol card and provide you with many essential travelling information.</span>"+
     "<span class='text'>Ready at your fingertips, I will guide you through a safe and joyful journey. </span>",
       ratingHeader:"Customer Ratings and Feedback. ",
        rating:"Please give us your feedback through Happiness rating and through stores so we understand how much you value the app. ",
